@@ -1,0 +1,43 @@
+<div class="container m-3">
+
+<!-- Title -->
+<div class="row mb-3">
+  <div class="col-12">
+    <h1 class="display-4 text-center">Weather Forecast</h1>
+  </div>
+</div>
+<!-- List of cities -->
+<div class="row">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/city/seattle']">Seattle, WA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/city/san jose']">San Jose, CA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/city/burbank']">Burbank, CA</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/city/dallas']">Dallas, TX</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/city/washington']">Washington, DC</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/city/chicago']">Chicago, IL</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-1"></div>
+</div>
+<!-- Second component -->
+<div class="row">
+    <div class="col-12">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+
+</div>
